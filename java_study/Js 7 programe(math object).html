@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <style>
+.version { color:darkblue; font-style:italic; background-color:#FFFF99; font-weight:200px; font-size:30px;text-decoration:underline ;text-align:center; padding:10px;}
+.version1 { color:maroon; font-style:oblique; font-weight:100px; font-size:20px;text-decoration:underline ;text-align:left; padding:10px;}
+
+</style>
+
+
+	<title></title></head>
+
+<body  bgcolor="pink">
+
+	<h1 class="version"> math object</h1>
+
+	 <script type="text/javascript">
+
+	function vivek1() 
+{
+ var x1 = document.getElementById("n1").value;
+  document.getElementById("d1").innerHTML = Math.abs(x1);
+}
+
+
+	function vivek2() 
+{
+ var x2 = document.getElementById("n2").value;
+  document.getElementById("d2").innerHTML = Math.cbrt(x2);
+}
+
+	function vivek3() 
+{
+ var x3 = document.getElementById("n3").value;
+  document.getElementById("d3").innerHTML = Math.ceil(x3);
+}
+
+
+	function vivek4() 
+{
+ var x4 = document.getElementById("n4").value;
+  document.getElementById("d4").innerHTML = Math.floor(x4);
+}
+
+
+	function vivek5() 
+{
+ var x5 = document.getElementById("n5").value;
+  document.getElementById("d5").innerHTML = Math.sqrt(x5);
+}
+
+
+	function vivek6() 
+{
+ var x6 = document.getElementById("n6").value;
+  var x7 = document.getElementById("n7").value;
+  document.getElementById("d6").innerHTML = Math.max(x6,x7);
+}
+
+
+	function vivek8() 
+{
+ var x8 = document.getElementById("n8").value;
+  var x9 = document.getElementById("n9").value;
+  document.getElementById("d8").innerHTML = Math.min(x8,x9);
+}
+
+	function vivek10() 
+{
+ var x10 = document.getElementById("n10").value;
+  var x11 = document.getElementById("n11").value;
+  document.getElementById("d10").innerHTML = Math.pow(x10,x11);
+}
+
+
+
+	function vivek11() 
+{
+
+  document.getElementById("d11").innerHTML =Math.floor(Math.random() * 10);;
+}
+
+
+
+
+</script>
+
+
+
+ 1) Enter number:-<input type="text" id=n1>
+<button onclick="vivek1()">check</button>
+ <p id=d1 class="version1" ># returns the absolute value of a number.</p><hr>
+
+
+
+
+2) Enter number:-<input type="text" id=n2>
+<button onclick="vivek2()">check</button>
+ <p id=d2 class="version1" ># returns the cube root of a number.</p><hr>
+
+ 
+
+ 
+ 3) Enter number:-<input type="text" id=n3>
+<button onclick="vivek3()">check</button>
+ <p id=d3 class="version1" ># returns the next integer greater than or equal to agiven number(rounding up).</p><hr>
+
+
+
+
+4) Enter number:-<input type="text" id=n4>
+<button onclick="vivek4()">check</button>
+ <p id=d4 class="version1" ># returns the next integer less than or equal to a given number(rounding down).</p><hr>
+
+
+5) Enter number:-<input type="text" id=n5>
+<button onclick="vivek5()">check</button>
+ <p id=d5 class="version1" ># returns the square root of number.</p><hr>
+
+
+6) Enter first number:-<input type="text" id=n6 > Enter second number:-<input type="text" id=n7 >
+
+<button onclick="vivek6()">check</button>
+ <p id=d6 class="version1" ># returns the highest-value number in a list of number.</p><hr>
+
+
+
+7) Enter first number:-<input type="text" id=n8 > Enter second number:-<input type="text" id=n9 >
+
+<button onclick="vivek8()">check</button>
+ <p id=d8 class="version1" ># returns the lowest-value number in a list of number.</p><hr>
+
+
+8) Enter first[x] number:-<input type="text" id=n10 > Enter second[y] number:-<input type="text" id=n11 >
+
+<button onclick="vivek10()">check</button>
+ <p id=d10 class="version1" ># returns the base to the exponent power, that is , (x<sup>y</sup>) .</p><hr>
+
+
+
+9) <button onclick="vivek11()">chaque</button>
+ <p id=d11 class="version1" ># Math.floor(Math.random() * 10) returns a random integer between 0 and 9 (both included .</p><hr>
+
+
+
+
+
+</body>
+</html>

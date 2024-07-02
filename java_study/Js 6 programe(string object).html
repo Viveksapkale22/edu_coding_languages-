@@ -1,0 +1,380 @@
+
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<TITLE>USE OF STRING</TITLE>
+<STYLE>
+.use{ text-align:center; }
+#time{  border: 5px inset blue;  padding :20px  20px; background-color: lightblue;  }
+#work{  border: 5px inset red; padding :20px  20px; background-color: lightpink;  }
+</STYLE>
+</HEAD>
+<BODY bgcolor="lightgreen">
+<h1 class="use">  **String Methods and Properties**   </h1>
+
+
+<div id="time">
+<h1>1) Length <br><br> The length property returns the length of a string.</h1>
+<h3>Syntax:-  text.length                         </h3>
+Enter value:-<input type="text" name="t1" id="i1" >
+<button onclick="myfunction1()"  name="b1"> check </button>
+</div>
+
+
+<div id="work">
+<h1>2)Slice(Start , end) <br><br>slice() extracts a part of a string and returns the extracted part in a new string.<br>The method takes 2 parameters: the start position, and the end position (end not included).</h1>                             
+<h3>Syntax:-   text.slice(start, end)                         </h3>
+
+ Enter value:-<input type="text" name="t2" id="i2" >  , Enter start value:-<input type="number" name="n1" id="i21" min="0" max="9"> , Enter end value:-<input type="number" name="n1" id="i22" min="0" max="9">
+<button onclick="myfunction2()"  name="b2">  check  </button>
+</div>
+
+<div id="time">
+<h1>3)Substring(Start , end)    <br><br>   substring() is similar to slice().<br>The difference is that start and end values less than 0 are treated as 0 in substring().      </h1>                             
+<h3>Syntax:-   text.substring(start, end)                         </h3>
+
+ Enter value:-<input type="text" name="t3" id="i3" >  , Enter start value:-<input type="number" name="n1" id="i31" min="0" max="9"> , Enter end value:-<input type="number" name="n1" id="i32" min="0" max="9">
+<button onclick="myfunction3()"  name="b3">  check </button>
+</div>
+
+
+<div id="work">
+<h1>4)Substr(Start , length)   <br><br>  substr() is similar to slice().<br>The difference is that the second parameter specifies the length of the extracted part.        </h1>                             
+<h3>Syntax:-  text.substr(start, length)                          </h3>
+
+ Enter value:-<input type="text" name="t4" id="i4" >  , Enter start value:-<input type="number" name="n1" id="i41" min="0" max="9"> , Enter length value:-<input type="number" name="n1" id="i42" min="0" max="9">
+<button onclick="myfunction4()"  name="b4">  check </button>
+</div>
+
+
+
+<div id="time">
+<h1>5)Replace <br><br>The replace() method replaces a specified value with another value in a string.           </h1>                             
+<h3>Syntax:- text.replace(what replace , what put)  <br>  use a regular expression with an /i flag (for insensitive) [eg., text.replace(/what replace/i , what put)]  <br>use a regular expression with a /g flag ( for global match)  [eg., text.replace(/what replace/g , what put)]</h3>
+
+ Enter value:-<input type="text" name="t5" id="i5" >  , Enter What replace:-<input type="text" name="n1" id="i51" > , Enter what put:-<input type="text" name="n1" id="i52" >
+<button onclick="myfunction5()"  name="b5">  check </button>
+
+</div>
+
+
+
+
+
+<div id="work">
+<h1>6) toUpperCase()<br><br>A string is converted to upper case with toUpperCase()</h1>
+<h3>Syntax:-    text.toUpperCase()                      </h3>
+Enter value:-<input type="text" name="t1" id="i6" >
+<button onclick="myfunction6()"  name="b6">  check </button>
+</div>
+
+<div id="time">
+<h1>7) toLowerCase()<br><br> A string is converted to lower case with toLowerCase()                                         </h1>
+<h3>Syntax:-  text.toLowerCase()                        </h3>
+Enter value:-<input type="text" name="t1" id="i7" >
+<button onclick="myfunction7()"  name="b7">  check </button>
+</div>
+
+
+
+<div id="time">
+<h1>8) concat() <br><br> concat() joins two or more strings.</h1>
+<h3>Syntax:-  text1.concat(text2)                          </h3>
+Enter first value:-<input type="text" name="t1" id="i8" >
+Enter second value:-<input type="text" name="t1" id="i81" >
+<button onclick="myfunction8()"  name="b8">  check </button>
+</div>
+
+<div id="work">
+<h1>9) trim() <br><br> The trim() method removes whitespace from both sides of a string                                        </h1>
+<h3>Syntax:-   text.trim()                         </h3>
+Enter value:-<input type="text" name="t1" id="i9" >
+<button onclick="myfunction9()"  name="b9">  check </button>
+<br><hr>
+ <h2>A)trimStart() <br><br>The trimStart() method works like trim(), but removes whitespace only from the start of a string.</h2>
+<h3>Syntax:- text.trimStart()            </h3>
+Enter value:-<input type="text" name="t1" id="i91" >
+<button onclick="myfunction91()"  name="b9">  check </button>
+<br><hr>
+ <h2>B)trimEnd() <br><br>The trimEnd() method works like trim(), but removes whitespace only from the end of a string.</h2>
+<h3>Syntax:-   text.trimEnd()           </h3>
+Enter value:-<input type="text" name="t1" id="i92" >
+<button onclick="myfunction92()"  name="b9">  check </button>
+</div>
+
+<div id="time">
+<h1>10) Padding()  </h1><br><br>
+
+<h2>A)padStart() <br><br>The padStart() method pads a string with another string</h2>
+]<h3>Syntax:-  text.padStart(length number,"any value");            </h3>                         
+Enter value:-<input type="text" name="t1" id="i10" >
+Enter length number:-<input type="number" name="n1" id="i101" min="0" max="999">
+Enter any value:-<input type="text" name="t1" id="i102" >
+<button onclick="myfunction10()"  name="b10">  check </button>
+
+<br><hr>
+ <h2>B)padEnd()<br><br>The padEnd() method pads a string with another string</h2>
+<h3>Syntax:-  text.padEnd(length number,"any value");            </h3>
+Enter value:-<input type="text" name="t1" id="i103" >
+Enter length number:-<input type="number" name="n1" id="i104" min="0" max="999">
+Enter any value:-<input type="text" name="t1" id="i105" >
+<button onclick="myfunction10()"  name="b10">  check </button>
+<br><hr>
+
+</div>
+
+
+<div id="work">
+<h1>11) charAt()<br><br> The charAt() method returns the character at a specified index (position) in a string                                      </h1>
+<h3>Syntax:- charAt(position number)                            </h3>
+Enter value:-<input type="text" name="t1" id="i11" >
+Enter position number:-<input type="number" name="n1" id="i111" min="0" max="99">
+<button onclick="myfunction11()"  name="b1">  check </button>
+</div>
+
+
+<div id="time">
+<h1>12) charCodeAt()<br><br>  The charCodeAt() method returns the unicode of the character at a specified index in a string <br>The method returns a UTF-16 code (an integer between 0 and 65535).                                    </h1>
+<p>Syntax:- charCodeAt(position number)                           </p>
+Enter value:-<input type="text" name="t1" id="i12" >
+Enter position number:-<input type="number" name="n1" id="i121" min="0" max="99">
+<button onclick="myfunction12()"  name="b1">  check </button>
+</div>
+
+<div id="work">
+<h1>13) Property Access<br><br>ECMAScript 5 (2009) allows property access [ ] on strings.                                       </h1>
+<h3>Syntax:- text[position number]                           </h3>
+Enter value:-<input type="text" name="t1" id="i13" >
+Enter position number:-<input type="number" name="n1" id="i131" min="0" max="99">
+<button onclick="myfunction13()"  name="b1">  check </button>
+</div>
+
+<div id="time">
+<h1>14) split()<br><br>A string can be converted to an array with the split() method.<br>If the separator is omitted, the returned array will contain the whole string in index [0].<br>If the separator is "", the returned array will be an array of single characters                                      </h1>
+<h3>Syntax:- text.split("value")                           </h3>
+Enter value:-<input type="text" name="t1" id="i14" >
+Enter value:-<input type="text" name="t1" id="i141" >
+<button onclick="myfunction14()"  name="b1">  check </button>
+</div>
+
+<hr><hr>
+
+<h1 class="use">  ** String Search Methods**   </h1>
+<div id="work">
+<h1>15) indexOf() <br><br> The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string.<br> -1 value show wrong number(value) or error or text is not found etc.<br>  parameter number use for find same word but different line.   </h1>
+<h3>Syntax:-  text.indexOf("Enter finding word", Enter parameter number(length form))                         </h3>
+Enter sentences:-<input type="text" name="v1" id="d1" >
+Enter finding word :-<input type="text" name="v1" id="d11" >
+Enter parameter number:-<input type="number" name="n1" id="d12" min="0" max="99">
+<button onclick="myfunction15()"  name="b1"> check </button>
+</div>
+<div id="time">
+<h1>16) lastindexOf() <br><br> The lastIndexOf() methods searches backwards (from the end to the beginning), meaning: if the second parameter is 15, the search starts at position 15, and searches to the beginning of the string.<br> -1 value show wrong number(value) or error or text is not found etc.</h1>
+<h3>Syntax:-  text.indexOf("finding word")                         </h3>
+Enter sentences:-<input type="text" name="v1" id="d2" >
+Enter finding word :-<input type="text" name="v1" id="d21" >
+Enter parameter number:-<input type="number" name="n1" id="d22" min="0" max="99">
+<button onclick="myfunction16()"  name="b1"> check </button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function myfunction1()
+{
+let a=document.getElementById('i1').value;
+window.alert("Give you Length Of Enter Value:- " + a.length,);
+
+}
+
+function myfunction2()
+{
+let a=document.getElementById('i2').value;
+let b=document.getElementById('i21').value;
+let c=document.getElementById('i22').value;
+window.alert(a.slice(b,c));
+
+}
+
+function myfunction3()
+{
+let a=document.getElementById('i3').value;
+let b=document.getElementById('i31').value;
+let c=document.getElementById('i32').value;
+window.alert(a.substring(b,c));
+
+}
+
+function myfunction4()
+{
+let a=document.getElementById('i4').value;
+let b=document.getElementById('i41').value;
+let c=document.getElementById('i42').value;
+window.alert(a.substr(b,c));
+
+}
+
+function myfunction5()
+{
+let a=document.getElementById('i5').value;
+let b=document.getElementById('i51').value;
+let c=document.getElementById('i52').value;
+window.alert(a.replace(b,c));
+document.write(a.replace(/b/i,c)+"<br>");
+document.write(a.replace(/b/g,c));
+}
+function myfunction6()
+{
+let a=document.getElementById('i6').value;
+window.alert(a.toUpperCase());
+
+}
+function myfunction7()
+{
+let a=document.getElementById('i7').value;
+window.alert(a.toLowerCase());
+
+}
+
+
+function myfunction8()
+{
+let a=document.getElementById('i8').value;
+let b=document.getElementById('i81').value;
+window.alert(a.concat(" ",b));
+
+}
+
+
+function myfunction9()
+{let a=document.getElementById('i9').value;
+window.alert(a.trim());}
+function myfunction91()
+{let b=document.getElementById('i91').value;
+window.alert(b.trimStart());}
+function myfunction92()
+{let c=document.getElementById('i92').value;
+window.alert(c.trimEnd());}
+
+
+function myfunction10()
+{let a=document.getElementById('i10').value;
+ let b=document.getElementById('i101').value;
+  let c=document.getElementById('i102').value;
+window.alert(a.padStart(b,c));}
+function myfunction101()
+{let d=document.getElementById('i103').value;
+ let e=document.getElementById('i104').value;
+  let f=document.getElementById('i105').value;
+window.alert(b.padEnd(e,f));}
+
+
+
+function myfunction11()
+{
+let a=document.getElementById('i11').value;
+let b=document.getElementById('i111').value;
+window.alert( a.charAt(b));
+
+}
+
+
+function myfunction12()
+{
+let a=document.getElementById('i12').value;
+let b=document.getElementById('i121').value;
+window.alert( a.charCodeAt(b));
+
+}
+
+function myfunction13()
+{
+let a=document.getElementById('i13').value;
+let b=document.getElementById('i131').value;
+window.alert( a[b]);
+
+}
+
+function myfunction14()
+{
+let a=document.getElementById('i14').value;
+let b=document.getElementById('i141').value;
+window.alert( a.split(b));
+
+}
+
+function myfunction15()
+{
+let a=document.getElementById('d1').value;
+let b=document.getElementById('d11').value;
+let c=document.getElementById('d12').value;
+window.alert( a.indexOf(b,c));
+
+}
+function myfunction16()
+{
+let a=document.getElementById('d2').value;
+let b=document.getElementById('d21').value;
+let c=document.getElementById('d22').value;
+window.alert( a.lastIndexOf(b,c));
+
+}
+function myfunction17()
+{
+let a=document.getElementById('d3').value;
+let b=document.getElementById('d31').value;
+window.alert( a.search(b));
+
+}
+function myfunction18()
+{
+let a=document.getElementById('d4').value;
+let b=document.getElementById('d41').value;
+window.alert( a.match(/b/gi));
+
+}
+function myfunction19()
+{
+let a=document.getElementById('d5').value;
+let b=document.getElementById('d51').value;
+let c=document.getElementById('d52').value;
+window.alert( a.includes(b,c));
+
+}
+function myfunction20()
+{
+let a=document.getElementById('d6').value;
+let b=document.getElementById('d61').value;
+let c=document.getElementById('d62').value;
+window.alert( a.startsWith(b,c));
+
+}
+function myfunction21()
+{
+let a=document.getElementById('d7').value;
+let b=document.getElementById('d71').value;
+let c=document.getElementById('d72').value;
+window.alert( a.endsWith(b,c));
+
+}
+
+
+
+</script>
+</BODY>
+</HTML>

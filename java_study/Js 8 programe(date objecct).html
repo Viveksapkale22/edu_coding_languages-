@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+body{
+color:white;
+}
+    </style>
+
+</head>
+<body bgcolor="black">
+<h1><center> Date Object</center> </h1>
+<h1><dl><di>1)Date:</di><dd> By default, JavaScript will use the browser's time zone and display a date as a full text string:</dd><dd> syntax: var a=new Date();  </dd></dl></h1>
+<input type =button onclick="vivek()" value="check">
+<p id="demo"></p>
+<hr>
+
+
+<h1><dl><di>1)Date object:</di><dd> new Date(year, month, ...) creates a date object with a specified date and time.</dd>
+<dd> syntax: var a=new Date(year,month,day,hours,minutes,seconds,ms);  </dd></dl></h1>
+<input type =button onclick="vivek1()" value="check">
+<p id="demo1"></p>
+<hr>
+
+
+ <script type="text/javascript">
+function vivek()
+{
+var a=new Date();
+document.getElementById('demo').innerHTML=a;
+}
+
+function vivek1()
+{
+var a=new Date(2004, 3, 22, 10, 33, 30, 0);
+document.getElementById('demo1').innerHTML=a;
+}
+</script>
+</body>
+</html>

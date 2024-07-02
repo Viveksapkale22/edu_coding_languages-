@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="pink">
+<h1> JAVASCRIPT EVENT </h1>
+
+<p> 1)onblur:- it occurs when user leaves field or losses focus of an element(click on box and then click unother box it will be occur[box in red colour])</p>
+Enter your name(): <input type="text" id="vivek1" onblur="myFunction()"><br>
+
+<p> 2)onfocus:- it occur when an element gets focus ( when yo click on the box[box in red colour])</p>
+Enter your name: <input type="text" id="vivek2" onfocus="myFunction1()"><br>
+
+<p> 3)onchange:- it occures when user changes content of an element or selects dropdown value(write text + click enter or change content[box in red colour])</p>
+3)Enter your name: <input type="text" id="vivek3" onchange="myFunction2()"><br>
+
+<p>4)onselect:-it occure when user selecs some text of an element.(select the text[box in red colour])</p>
+Enter your name: <input type="text" id="vivek4" onselect="myFunction3()"><br>
+
+<p>5)onsubmit:-it ocures when user clicks submit button.( when you click[box in red colour]) </p>
+Enter your name: <input type="text" id="vivek5" onsubmit="myFunction4()"><br>
+
+
+<p>6) onreset:- it occurs when user clicks reset button (click reset button[box in red colour])</p>
+Enter your name: <input type="text" id="vivek6" onreset="myFunction5()"><br>
+
+<p>7) onload:- it occurs when page /image loaded( when load page[box in red colour])</p>
+Enter your name: <input type="text" id="vivek7" onload="myFunction6()"><br>
+
+<p> 8)onunload:- it occures when document/page has been unloaded or closes</p>
+Enter your name: <input type="text" id="vivek8" onload="myFunction7()"><br>
+
+
+
+<script type="text/javascript">
+function myFunction() {
+  document.getElementById("vivek1").style.backgroundColor = "red";
+}
+function myFunction1()
+ {
+ 	document.getElementById("vivek2").style.backgroundColor = "red";
+ }
+
+  function myFunction2()
+  {
+  	document.getElementById("vivek3").style.backgroundColor = "red";
+  }
+
+ function myFunction3()
+  {
+  	document.getElementById("vivek4").style.backgroundColor = "red";
+  }
+  function myFunction4()
+ {
+ 	document.getElementById("vivek5").style.backgroundColor = "red";
+ }
+
+  function myFunction5()
+  {
+  	document.getElementById("vivek6").style.backgroundColor = "red";
+  }
+
+  function myFunction6()
+  {
+  	document.getElementById("vivek7").style.backgroundColor = "red";
+  }
+
+  function myFunction7()
+  {
+  	document.getElementById("vivek8").style.backgroundColor = "red";
+  }
+
+</script>
+
+</body>
+</html>

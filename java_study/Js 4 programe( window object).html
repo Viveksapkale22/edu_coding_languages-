@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head><title> innerHTML</title></head>
+<style>
+.button{
+
+  border:3px solid purple ;
+  padding: 10px 10px ;
+  border-radius:20px;
+  width: 75%;
+}
+
+</style>
+
+
+<body bgcolor="skyblue">
+	<h1> <center> WINDOW object </center></h1>
+	<h3>the window object is the first object of the the all objects and it is parant of all other objects . </h3>
+    <h3> it is represent an open window in a browser and an object of window is create automatically by the browser.</h3>
+
+   <input class="button" type="button" value= "1)click for property of window object" onclick="myfunction()"><br><br>
+    <input class="button" type="button" value= "2)click for alert()" onclick="myfunction1()"><br><br>
+    <input class="button" type="button" value= "3)click for confirm()" onclick="myfunction2()"><br><br>
+      <input class="button" type="button" value= "4)click for prompt()" onclick="myfunction3()"><br><br>
+      <input class="button" type="button" value= "5)click for open()" onclick="myfunction4()"><br><br>
+      <input class="button" type="button" value= "6)click for close()" onclick="myfunction5()"><br><br>
+       <input class="button" type="button" value= "7)click for blur()" onclick="myfunction6()"><br><br>
+       <input class="button" type="button" value= "8)click for focus()" onclick="myfunction7()"><br><br>
+       <input class="button" type="button" value= "9)click for print()" onclick="myfunction8()"><br><br>
+       <input class="button" type="button" value= "10)click for setTimeout()[after 3 second it will be open]" onclick="myfunction9()"><br><br>
+
+
+
+
+<script type="text/javascript">
+function myfunction()
+{
+  var vivek=window.open();
+  vivek.document.write("<h1> syntax:-window.open();  <br> window property is  name, location ,document,status(set or returns text in status bar),closed</h1>");
+}
+function myfunction1()
+{
+  var vivek1=window.alert("Method alert() is displays the alert box message with ok botton. ");
+}
+function myfunction2()
+{
+  var vivek2=window.confirm("Method confirm() is displays the alert box message with ok and cancel botton.")
+}
+function myfunction3()
+{
+    var vivek3=window.prompt("Method propmt() is displays the dialog box to get input from user.     write your name.")
+}
+function myfunction4()
+{
+    var vivek4=window.open()
+    vivek4.document.write("<h1>method open() is opens the new window</h1><h2> SYNTAX:-</h2><h2>function namefunction()</h2><h2> { var name of var=window.open</h2><h2> name of var.document.write(write the statment)    }</h2>") 
+}
+function myfunction5()
+{ 
+  var vivek5=window.close("close the window")
+}
+function myfunction6()
+{
+  var vivek6=window.open()
+  vivek6.document.write("removes focus from the current window")
+  vivek6.blur()
+}
+function myfunction7()
+{
+  var vivek7=window.open()
+    vivek7.document.write("set focus to the currnt window")
+    vivek7.focus()
+}
+function myfunction8()
+{
+   var vivek7= print("print the current window")
+}
+function myfunction9()
+{
+  setTimeout (myfunction10, 3000);
+  
+
+}
+function myfunction10()
+{
+  alert("calls a function or evaluates an expression after a specified number of milliseconds.")
+}
+</script>
+
+</body>
+</html>
