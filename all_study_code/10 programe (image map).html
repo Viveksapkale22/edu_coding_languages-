@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+</head>
+<body bgcolor="pink">
+	<H1> image map HTML5 </H1>
+	<p> An image with multiple hyperlinks is called an image map. </p>
+	<P> The clickable regions on the image is called as hotspots. </P>
+	<p> image map have two type 1) clinet side 2)server side ( we use only clinet side image map .) </p>
+	<h2> tags of image map </h2>
+
+	<h4> 1) img </h4>
+	<p> use to insert image on web page </p>
+	<p>  usemap attribute of (img) use , preceded with a # symbol .</p>
+	<p> usemap attribute  indicates that the image is a client side image map.</p>
+
+	<h4> 2) map </h4>
+	<p> this attribute specifies name of image . </p>
+	<p> value of the this map is specified in usemap attribute(#----) .</p>
+
+	<h4> 3) area </h4>
+    <p> defines specific clickable region.  </p>
+    <p> it is singular tag. </p>
+    <p> map contain multiple area within it.</p>
+    <p>attribute= Href(difines the URL) , Shape(rect{4 point}, circle{3 point} ,poly{ variable point}), coords (rect{4 point}, circle{3 point} ,poly{ variable point}),alt(extra information about clckable area)</p>
+
+    <h1>syntax<h1>
+    	<h3> img src="name.mp4"  usemap="#imagemap" alt="to fix some" height=""  width=""</h3>
+         <h3> map name=imagmap<h3>
+         	<h3> area href=" web name " shape="  " coords="   " alt="name of web"</h3>
+         	<h3> area href=" web name " shape="  " coords="   " alt="name of web" </h3>
+         	<p> map close tag</p>
+    <h1> EXAMPLE</h1>
+
+<img src ="workplace.jpg" 
+     usemap="#imagemap" alt="iamge of workplace">
+
+     <map name ="imagemap">
+
+      <area href="1 programe (form formation ).html" shape="circle" coords="339,300,50" alt="cup">
+      <area  href="8 PROGRAME ( AUDIO ).html" shape=" rect" coords="35,44,271,343" alt=" laptop">
+      <area href="" shape=" rect" coords="290,173,334,247" alt="mobile">
+  </map>
+
+
+</body>
+</html>
